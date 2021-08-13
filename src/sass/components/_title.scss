@@ -1,0 +1,47 @@
+.title{
+    &__flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+       
+    }
+    &__name{
+        font-family: $font-title;
+        font-size: 18px;
+        line-height: 25px;
+
+        color: var(--black);
+    }
+    &__link{
+        display: flex;
+        align-items: center;
+
+        margin-top: 7px;
+
+        font-size: $small-text;
+        line-height: 12px;
+
+        color: var(--gray-400);
+        
+        svg{
+                height: 11px;
+
+                margin-left: 3px;
+
+                fill: var(--gray-400);
+            }
+    }
+}
+
+@include rmin($bp-tablet){
+    .title{
+        &__name{
+            font-size: $title-text-l;
+        }
+        &__link{
+            font-size: $small-text-l;
+        }
+        
+    }
+}

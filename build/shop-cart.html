@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Корзина</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css">
+  </head>
+  <body>
+    <!--BEGIN out-->
+    <div class="out">
+      <!--BEGIN header-->
+      <header class="header-detail">
+        <div class="header-detail__wrapper"><a class="header-detail__button-back" onclick="javascript:history.back(); return false;"> <span class="visually-hidden">Назад</span><svg class="icon icon-left-arrow ">
+              <use xlink:href="img/sprite.svg#icon-left-arrow"></use>
+            </svg></a><button class="header__button-menu"><span class="visually-hidden">Открыть меню</span></button></div><a class="header__button-basket" href="shop-cart.html"><strong class="header__total-cost">2235 ₽</strong>
+          <div class="header__container"><svg class="icon icon-header__cart header__icon">
+              <use xlink:href="img/sprite.svg#icon-header__cart"></use>
+            </svg><span class="header__count">3</span></div>
+        </a>
+      </header>
+      <div class="menu">
+        <div class="menu__flex"><button class="menu__button--closed"><span class="visually-hidden">Открыть меню</span></button><a class="header__button-basket" href="shop-cart.html"><strong class="header__total-cost">2235 ₽</strong>
+            <div class="header__container"><svg class="icon icon-header__cart header__icon">
+                <use xlink:href="img/sprite.svg#icon-header__cart"></use>
+              </svg><span class="header__count">3</span></div>
+          </a></div>
+        <p class="menu__graphic"><time>Ежедневно</time></p>
+        <p class="menu__time"> <time>C 09:00 до 21:00</time></p>
+        <nav class="menu__main-nav">
+          <ul class="menu__main-nav__list">
+            <li class="menu__main-nav__list-item"><a href="main.html"><svg class="icon icon-home menu__icon-home">
+                  <use xlink:href="img/sprite.svg#icon-home"></use>
+                </svg>
+                <p>Главная</p>
+              </a></li>
+            <li class="menu__main-nav__list-item"><a href="#"> <svg class="icon icon-user menu__icon-user">
+                  <use xlink:href="img/sprite.svg#icon-user"></use>
+                </svg>
+                <p>Личный кабинет</p>
+              </a></li>
+            <li class="menu__main-nav__list-item"> <a href="#"><svg class="icon icon-shopping-bag menu__icon-shoping-bag">
+                  <use xlink:href="img/sprite.svg#icon-shopping-bag"></use>
+                </svg>
+                <p>Мои заказы</p>
+              </a></li>
+            <li class="menu__main-nav__list-item"> <a href="#"><svg class="icon icon-voucher menu__icon-voucher">
+                  <use xlink:href="img/sprite.svg#icon-voucher"></use>
+                </svg>
+                <p>Промокоды</p>
+              </a></li>
+            <li class="menu__main-nav__list-item"> <a href="#"><svg class="icon icon-truck menu__icon-truck">
+                  <use xlink:href="img/sprite.svg#icon-truck"></use>
+                </svg>
+                <p>Доставка</p>
+              </a></li>
+            <li class="menu__main-nav__list-item"> <a href="#"><svg class="icon icon-newspaper menu__icon-newspaper">
+                  <use xlink:href="img/sprite.svg#icon-newspaper"></use>
+                </svg>
+                <p>Новости</p>
+              </a></li>
+            <li class="menu__main-nav__list-item"> <a href="#"><svg class="icon icon-phone-call menu__icon-phone-call">
+                  <use xlink:href="img/sprite.svg#icon-phone-call"></use>
+                </svg>
+                <p>Контакты</p>
+              </a></li>
+          </ul>
+        </nav><a class="menu__button-call" href="#"><svg class="icon icon-headset ">
+            <use xlink:href="img/sprite.svg#icon-headset"></use>
+          </svg>
+          <p>Звонок оператору </p>
+        </a>
+        <div class="menu__social">
+          <p>Мы в социальных сетях</p>
+          <ul class="menu__social-icon">
+            <li><a href="telegram.com"> <svg class="icon icon-telegram ">
+                  <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                </svg></a></li>
+            <li><a href="twitter.com"> <svg class="icon icon-twitter ">
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                </svg></a></li>
+            <li><a href="facebook.com"> <svg class="icon icon-facebook ">
+                  <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                </svg></a></li>
+          </ul>
+        </div>
+      </div>
+      <!--END header-->
+      <main class="shop-cart">
+        <div class="shop-cart__flex">
+          <h2 class="shop-cart__title">Мой заказ</h2><button class="shop-cart__view-btn"><img src="img/svgo/shop-cart.svg"></button>
+        </div>
+        <ul class="shop-cart__list">
+          <li class="shop-cart__item">
+            <div class="shop-cart__flex-description"><img class="shop-cart__img" src="img/pizza-pepperoni.png" width="75px" height="75px" />
+              <div class="shop-cart__wrap-description">
+                <p class="shop-cart__ingridient">Пицца / 420г / 30см<img class="shop-cart__accord" src="img/svgo/accord.svg" /></p>
+                <p class="shop-cart__name">Пепперони</p>
+                <div class="shop-cart__count-btn"><button class="shop-cart__minus-btn">-</button><button class="shop-cart__plus-btn">+</button></div>
+              </div>
+            </div><button class="shop-cart__delete-btn"><svg class="icon icon-delete shop-cart__delete-icon">
+                <use xlink:href="img/sprite.svg#icon-delete"></use>
+              </svg></button>
+            <div class="shop-cart__flex-multiplier"> <input class="shop-cart__multiplier" type="text" value="1" /><span class="shop-cart__multiplier-icon">x </span><span class="shop-cart__cost">395 ₽</span></div>
+          </li>
+          <li class="shop-cart__item">
+            <div class="shop-cart__flex-description"><img class="shop-cart__img" src="img/pizza-italian.png" width="75px" height="75px" />
+              <div class="shop-cart__wrap-description">
+                <p class="shop-cart__ingridient">Пицца / 460г / 30см<img class="shop-cart__accord" src="img/svgo/accord.svg" /></p>
+                <p class="shop-cart__name">Итальянская</p>
+                <div class="shop-cart__count-btn"><button class="shop-cart__minus-btn">-</button><button class="shop-cart__plus-btn">+</button></div>
+              </div>
+            </div><button class="shop-cart__delete-btn"><svg class="icon icon-delete shop-cart__delete-icon">
+                <use xlink:href="img/sprite.svg#icon-delete"></use>
+              </svg></button>
+            <div class="shop-cart__flex-multiplier"> <input class="shop-cart__multiplier" type="text" value="2" /><span class="shop-cart__multiplier-icon">x </span><span class="shop-cart__cost">960 ₽</span></div>
+          </li>
+          <li class="shop-cart__item">
+            <div class="shop-cart__flex-description"><img class="shop-cart__img" src="img/pizza-4cheese.png" width="75px" height="75px" />
+              <div class="shop-cart__wrap-description">
+                <p class="shop-cart__ingridient">Пицца / 450г / 30см<img class="shop-cart__accord" src="img/svgo/accord.svg" /></p>
+                <p class="shop-cart__name">Четыре сыра</p>
+                <div class="shop-cart__count-btn"><button class="shop-cart__minus-btn">-</button><button class="shop-cart__plus-btn">+</button></div>
+              </div>
+            </div><button class="shop-cart__delete-btn"><svg class="icon icon-delete shop-cart__delete-icon">
+                <use xlink:href="img/sprite.svg#icon-delete"></use>
+              </svg></button>
+            <div class="shop-cart__flex-multiplier"> <input class="shop-cart__multiplier" type="text" value="1" /><span class="shop-cart__multiplier-icon">x </span><span class="shop-cart__cost">425 ₽</span></div>
+          </li>
+          <li class="shop-cart__item">
+            <div class="shop-cart__flex-description"><img class="shop-cart__img" src="img/diablo2.png" width="75px" height="75px" />
+              <div class="shop-cart__wrap-description">
+                <p class="shop-cart__ingridient">Пицца / 410г / 30см<img class="shop-cart__accord" src="img/svgo/accord.svg" /></p>
+                <p class="shop-cart__name">Диабло</p>
+                <div class="shop-cart__count-btn"><button class="shop-cart__minus-btn">-</button><button class="shop-cart__plus-btn">+</button></div>
+              </div>
+            </div><button class="shop-cart__delete-btn"><svg class="icon icon-delete shop-cart__delete-icon">
+                <use xlink:href="img/sprite.svg#icon-delete"></use>
+              </svg></button>
+            <div class="shop-cart__flex-multiplier"> <input class="shop-cart__multiplier" type="text" value="1" /><span class="shop-cart__multiplier-icon">x </span><span class="shop-cart__cost">455 ₽</span></div>
+          </li>
+        </ul>
+        <div class="shop-cart__bg-button"><button class="button-small__buy shop-cart__button">Оформить заказ</button></div>
+      </main>
+      <script>
+        window.onload = function()
+        {
+          document.querySelector('.header__button-basket').style.boxShadow = 'none';
+        };
+
+      </script>
+    </div>
+    <!--END out-->
+    <!--LOAD SCRIPTS-->
+    <script src="js/app.js"></script>
+  </body>
+</html>

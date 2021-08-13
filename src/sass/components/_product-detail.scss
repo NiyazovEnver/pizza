@@ -1,0 +1,158 @@
+.product-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 37px;
+    
+    &__flex-quantity{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__container{
+        display: flex;
+        justify-content: space-around;
+
+        width: 194px;
+    }
+    &__img{
+       z-index: -1;
+
+       margin-top: -200px;
+       margin-bottom: 23px;
+    }
+    &__size{
+        margin-left: 0px;
+
+        font-family: $font-title;
+        font-size: $product-detail-size;
+    }
+    &__weight{
+        margin-left: 5px;
+
+        font-family: $font-title;
+        font-size: $product-detail-size;
+        line-height: 30px;;
+    }
+    &__wrapper{
+        display: flex;
+        align-items: center;
+
+        margin-bottom: 13px;
+    }
+
+    &__title{
+        font-size: $product-detail-title;
+        line-height: 39px;
+        text-align: center;
+
+        color: var(--red-500);
+    }
+
+    &__ingridient{
+        margin-bottom: 32px;
+
+        font-size: $product-detail-ingridient;
+        text-align: center;
+
+        color: var(--gray-500);
+    }
+    &__minus-btn{
+        
+        width: 40px;
+        border-radius: 10px;
+
+        text-align: center;
+        font-size: 30px;
+
+        color: var(--gray-400);
+        background-color: var(--gray-200);
+    }
+    &__plus-btn{
+        width: 40px;
+
+        border-radius: 10px;
+        
+        font-size: 30px;
+        text-align: center;
+
+        background-color: var(--gray-200);
+        color: var(--gray-400);
+    }
+    &__count{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 30px;
+        
+        border-radius: 10px;
+        
+        font-family: $font-secondary;
+        text-align: center;
+        font-size: 28px;
+        font-weight: 700;
+
+        color: var(--gray-400);
+        background-color: var(--gray-200);
+    }
+    &__quantity{
+        display: flex;
+
+        width: 100px;
+        height: 45px;
+
+        margin-right: 13px;
+
+        border-radius: 10px;
+
+        background-color: var(--gray-200);
+    }
+    &__buy{
+        width: 190px;
+        height: 50px;
+
+        border-radius: 10px;
+
+        font-family: $font-title;
+        font-size: $product-detail-button;
+        font-weight: bold;
+        
+    }
+}
+
+@include rmin($bp-phone-m){
+    .product-detail{
+        &__buy{
+            width: 202px;
+        }
+        &__quantity{
+            width: 112px;
+        }
+    }
+}
+
+@include rmin($bp-phone-l){
+    .product-detail{
+        &__img{
+            width: 380px;
+            height: 380px;
+            
+            margin-top: -230px; 
+         }
+    }
+}
+
+@include rmin($bp-tablet){
+
+    .product-detail{
+        &__img{
+            margin-top: -65px;
+            margin-bottom: 23px;
+         }
+    }
+    
+}

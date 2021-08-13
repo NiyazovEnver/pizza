@@ -1,0 +1,119 @@
+.header-detail{
+
+    .header__button-basket{
+        box-shadow: var(--b-shadow-header);
+        
+    }
+
+    display: flex;
+    justify-content: space-between;
+
+    width: $bp-phone;
+
+    margin: 0 auto;
+
+    padding-top: 10px;
+    @include padding-s();
+    
+    &__button-menu{
+        width: 26px;
+        height: 20px;
+
+        background: url('../../img/menu.svg') no-repeat; 
+    }
+    
+    &__button-back{
+        margin-right: 5px;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 98px;
+        height: 44px;
+
+        margin-left: -10px;
+
+        // padding: 20px;
+
+        border-radius: 100px;
+        
+        background-color: var(--white);
+        
+        a{  
+            &:hover{
+                cursor: pointer;
+            }
+
+            svg{
+                margin-top: 3px;
+            }
+            width: 30px;
+            
+        }
+    }
+}
+
+@include rmin($bp-phone-m){
+    .header-detail{
+        width: $bp-phone-m;
+
+        @include padding();
+    }
+}
+
+
+.header-detail__button-close{
+    
+    width: 24px;
+    height: 17px;
+    
+    background-color: #fff;
+
+    &::before,
+    &::after{
+        content: "";
+
+        position: absolute;
+
+        top: 30px;
+        left: 10px;
+
+        width: 24px;
+        height: 2px;
+        
+        background-color: #000;
+    }
+
+    &::before{
+        transform: rotate(45deg);
+    }
+
+    &::after{
+        transform: rotate(-45deg);
+    }
+}
+@include rmin($bp-phone-l){
+    .header-detail{
+        width: $bp-phone-l;
+    }
+    
+}
+
+@include rmin($bp-tablet){
+    .header-detail{
+        width: $bp-tablet;
+        
+        padding-right: 20px;
+
+        .header__button-basket{
+            box-shadow: none;
+        }
+        
+        &__wrapper{
+            margin-top: -1px;
+        }
+    }
+
+}

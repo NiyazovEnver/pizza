@@ -1,0 +1,26 @@
+.page-main{
+    width: $bp-phone;
+    
+    margin: 0 auto;
+    
+    @include padding-s();
+    
+}
+
+@include rmin($bp-phone-m){
+    .page-main{
+        width: $bp-phone-m;
+        
+        @include padding();
+    }
+}
+@include rmin($bp-phone-l){
+    .page-main{
+        width: $bp-phone-l;
+    }
+}
+@include rmin($bp-tablet){
+    .page-main{
+        width: $bp-tablet;
+    }
+}

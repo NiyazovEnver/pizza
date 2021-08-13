@@ -1,0 +1,31 @@
+
+.category-details{
+    width: $bp-phone;
+
+    margin: 0 auto;
+    
+    padding-top: 20px;
+    @include padding-s();
+}
+
+@include rmin($bp-phone-m){
+    .category-details{
+        width: $bp-phone-m;
+        
+        @include padding();
+    }
+}
+
+@include rmin($bp-phone-l){
+    
+    .category-details{
+    width: $bp-phone-l;
+    }
+}
+
+@include rmin($bp-tablet){
+    
+    .category-details{
+        width: $bp-tablet;
+        }
+}

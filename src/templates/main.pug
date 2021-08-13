@@ -1,0 +1,59 @@
+---
+title: Главная
+---
+extends layouts/_layout
+block content
+  
+  include ./partials/_slider
+  main.page-main
+    
+    section.categories
+      +title('Категории', 'category.html', 'Все категории')
+    
+  
+      ul.categories__list
+          li
+            a(href='#').categories__cart
+              +categories('pizza.svg', 'Пицца', '', '')
+          li
+            a(href='#').categories__cart
+              +categories('wok.svg', 'Лапша WOK','', '')
+          li
+            a(href='#').categories__cart
+              +categories('sushi.svg', 'Суши', '', '')
+          li
+            a(href='#').categories__cart
+              +categories('salad.svg', 'Салаты', '', '')
+          li
+            a(href='#').categories__cart 
+              +categories('pizza.svg', 'Пицца', '', '')
+          li
+            a(href='#').categories__cart
+              +categories('wok.svg', 'Лапша Wok', '', '')
+          li
+            a(href='#').categories__cart
+              +categories('sushi.svg', 'Суши', '', '')
+          li
+            a(href='#').categories__cart
+              +categories('salad.svg', 'Салаты', '', '')
+      
+    section.popular-dishes   
+      +title('Популярные блюда', '#', '')
+    
+    include ./partials/_popular-dishes
+    
+    section.order
+      +title('Частые заказы', '#', 'Вся история')
+
+      include ./partials/_order
+
+  script(src="js/slider.js")
+
+     
+
+
+       
+
+      
+      
+      

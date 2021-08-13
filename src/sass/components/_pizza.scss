@@ -1,0 +1,58 @@
+
+.pizza{
+    &__title{
+        margin-bottom: 20px;
+
+        font-family: $font-title;
+        font-size: 18px;
+        line-height: 25px;
+
+        color: var(--black);
+    }
+
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+
+        padding-top: 20px;
+        
+        &__item{
+            display: block;
+
+            width: 47%;
+
+            // margin: 8px;
+            margin-right: 16px;
+            margin-bottom: 16px;
+
+            padding: 14px;
+
+            border-radius: 5px;
+
+            box-shadow: var(--b-shadow);
+
+            &:nth-child(2n){
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+
+@include rmin($bp-tablet){
+    .pizza{
+        
+         &__list{
+            &__item{
+                width: 23.3%;
+
+                &:nth-child(2n){
+                    margin-right: 16px;
+                }
+                &:nth-child(4n){
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

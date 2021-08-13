@@ -1,0 +1,59 @@
+---
+title: Категории
+---
+extends layouts/_layout
+block content
+  main.category-details
+
+    +title('Категории', 'category.html', 'Все категории')
+    ul.categories__list
+        li
+          a(href='#').categories__cart 
+            +categories('pizza.svg', 'Пицца', '', '')
+        li
+          a(href='#').categories__cart
+            +categories('wok.svg', 'Лапша Wok','', '')
+        li
+          a(href='#').categories__cart
+            +categories('sushi.svg', 'Суши', '', '')
+        li
+          a(href='#').categories__cart
+            +categories('salad.svg', 'Салаты', '', '')
+        li
+          a(href='#').categories__cart 
+            +categories('pizza.svg', 'Пицца', '', '')
+        li
+          a(href='#').categories__cart
+            +categories('wok.svg', 'Лапша Wok', '', '')
+        li
+          a(href='#').categories__cart
+            +categories('sushi.svg', 'Суши', '', '')
+        li
+          a(href='#').categories__cart
+            +categories('salad.svg', 'Салаты', '', '')
+
+    section.pizza
+      +title('Пицца')
+
+      ul.pizza__list
+          li.pizza__list__item
+            a(href='#')
+              +dishes('pizza-pepperoni.png', '420г', '30см', 'Пепперони', 'пикантная пепперони, томатный соус, моцарелла', '395 ₽','New')
+          li.pizza__list__item
+            a(href='#')
+              +dishes('pizza-4cheese.png', '450г', '30см', 'Четыре сыра', 'филе говядины, вяленые помидоры, помидоры, перец сладкий, моцарела', '425 ₽', '')
+          li.pizza__list__item
+            a(href='#')
+              +dishes('diablo2.png', '500г', '30см', 'Диабло', 'филе говядины, вяленые помидоры, помидоры, перец сладкий, моцарела', '545 ₽', '')
+          li.pizza__list__item
+            a(href='#')
+              +dishes('pizza-italian.png', '390г', '30см', 'Итальянская', 'итальянские травы, пепперони, томатный соус, шампиньоны, моцарелла, маслины', '450 ₽', 'Sale')
+          li.pizza__list__item
+            a(href='#')
+              +dishes('pizza-pepperoni.png', '420г', '30см', 'Пепперони', 'пикантная пепперони, томатный соус, моцарелла', '395 ₽','New')
+          li.pizza__list__item
+            a(href='#')
+              +dishes('pizza-italian.png', '390г', '30см', 'Итальянская', 'итальянские травы, пепперони, томатный соус, шампиньоны, моцарелла, маслины', '450 ₽', 'Sale')
+        
+        
+  

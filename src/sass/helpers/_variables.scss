@@ -1,0 +1,125 @@
+// breakpoints
+$bp-phone: 320px;
+$bp-phone-m:375px;
+$bp-phone-l:414px;
+$bp-tablet:768px;
+
+$button-text: 10px;
+$button-menu-text: 24px;
+
+$title-size: 18px;
+$title-text-l: 22px;
+
+$categories-title: 11px;
+
+$small-text: 10px;
+$small-text-l: 14px;
+
+$note-size: 7px;
+$order-title: 12px;
+$order-title-l: 16px;
+$order-button-l: 14px;
+
+$volume-size: 10px;
+$volume-size-l: 12px;
+
+$types-text: 8px;
+
+$graphic-text: 16px;
+$menu-item: 22px;
+
+$text-social: 14px;
+
+$product-detail-size: 22px;
+$product-detail-title: 32px;
+$product-detail-ingridient: 18px;
+$product-detail-button: 24px;
+
+$shop-cart-ingridient: 7px;
+$shop-cart-ingridient-l: 12px;
+
+$multiplier: 12px;
+
+$shop-cart-cost: 18px;
+$shop-cart-title-l: 24px;
+
+$shop-cart-name-l: 20px;
+$shop-cart-button: 20px;
+$shop-cart-cost-l: 24px;
+$shop-cart-multiplier-l: 16px;
+
+$cart-title-l: 14px;
+$types-text-l: 10px;
+
+
+
+$add-pizza-cost: 12px;
+$add-pizza-cost-l: 14px;
+
+$pizza-title: 14px;
+$pizza-title-l: 18px;
+
+$ingridient-pizza: 8px;
+$ingridient-pizza-l: 12px;
+
+$dishes-cost-size: 20px;
+
+
+
+@mixin padding-s(){
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+@mixin padding(){
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+
+// variables
+$font-main: 'Gilroy', sans-serif;
+$font-title: 'NotoSerif', sans-serif;
+$font-secondary: 'PTSans-Narrow', sans-serif;
+
+// colors
+:root {
+  --black: #393939;
+  --white: #FFFFFF;
+
+  --gray-500: #6B6B6B;
+  --gray-400: #8E8E8E;
+  --gray-300: #DCDCDC;
+  --gray-200: #F5F5F5;
+  
+  --pink-300: #FF9FA6;
+  
+  --green-300:#1ACB56;
+  --red-600: #D32F2F;
+  --red-500: #EB212E;
+  --red-300: #FF5863;
+  
+  --blue-400: #2E8EFF;
+  
+  --orange-500: #FFA000;
+  --orange-300: #FFCC76;
+  --orange-600: #F57C00;
+
+
+
+  // gradients
+  --red-gradient: linear-gradient(91.85deg, #FF5863 0.1%, #EB212E 101.94%, #EB212E 101.94%);
+  --orange-gradient: linear-gradient(271.07deg, #FFA000 -2.43%, #FFCC76 99.44%);
+  // shadows
+  --b-shadow: 5px 5px 25px rgba(0, 0, 0, 0.08);
+  --button-dishes-shadow: 2px 2px 5px rgba(235, 33, 46, 0.15);
+  --button-shadow: 0px 2px 10px rgba(235, 33, 46, 0.25);
+  --b-shadow-button-call: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  --b-shadow-add-pizza: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  --b-shadow-add-pizza-cost: 0px 2px 10px #EBEBEB;
+  --b-shadow-header: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+

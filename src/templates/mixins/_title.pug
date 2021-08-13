@@ -1,0 +1,7 @@
+mixin title(name, link='', all='')
+  div.title__flex
+          h2.title__name=name
+          if all != ''
+            a(href=link class="title__link")
+                span=all
+                +icon('arrow-right', 'arrow-right')

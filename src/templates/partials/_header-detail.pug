@@ -1,0 +1,16 @@
+//BEGIN header
+header.header-detail
+  div.header-detail__wrapper
+    a(onclick='javascript:history.back(); return false;').header-detail__button-back 
+        span.visually-hidden Назад
+        +icon('left-arrow')
+    button.header__button-menu
+        span.visually-hidden Открыть меню
+  a(href="shop-cart.html").header__button-basket
+    strong.header__total-cost 2235 ₽
+    div.header__container
+      +icon('header__cart', 'header__icon')
+      span.header__count 3
+
+include _menu  
+//END header

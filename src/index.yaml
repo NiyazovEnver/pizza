@@ -1,0 +1,9 @@
+ProjectTitle: la-pizza
+
+PageList:
+- file: main.html
+- file: category-details.html
+- file: category.html
+- file: product-detail.html
+- file: shop-cart.html
+  ready: 50

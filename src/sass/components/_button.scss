@@ -1,0 +1,15 @@
+.button-small__buy{
+    display: block;
+    width: 85px;
+    height: 20px;
+    
+    font-family: $font-title;
+    font-size: $button-text;
+    line-height: 14px;
+    font-weight: bold;
+    
+    background: var(--red-gradient);
+    color: var(--white);
+    border-radius: 3px;
+    box-shadow: var(--button-shadow);
+}

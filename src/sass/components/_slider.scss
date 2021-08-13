@@ -1,0 +1,94 @@
+
+.glide{
+    margin-bottom: 48px;
+
+    &__slide{
+        width: 344px;
+
+        background: url('../../img/bg-slider.png') no-repeat;
+        background-size: cover;
+        
+    }
+    &__bullets{
+        bottom: -15px;
+    }
+    &__bullet{
+        width: 8px;
+        height: 8px;
+
+        background-color: var(--gray-300);
+    }
+    &__bullet--active{
+        width: 25px;
+        height: 8px;
+
+        border-radius: 15px;
+
+        background: var(--red-gradient);
+    }
+}
+
+
+.slider{
+    &__flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding-top: 16px;
+        padding-bottom: 16px;
+    
+    }
+    &__news{
+        font-size: $small-text;
+        font-weight: 500;
+        text-align: center;
+
+        color: var(--gray-500);
+    }
+    &__title{
+        margin-bottom: 10px;
+
+        font-family: $font-title;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        
+        color: var(--black);
+    }
+    &__flex-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__button{
+        font-size: $button-text;
+    }
+}
+
+@include rmin($bp-phone-m){
+    .slider{
+        &__flex-item{
+            margin-left: 13px;
+        }
+       
+    }
+}
+
+@include rmin($bp-tablet){
+    .slider{
+        &__title{
+            font-size: $title-text-l;
+        }
+        &__news{
+            font-size: $small-text-l;
+        }
+        &__button{
+            width: 100px;
+            height: 25px;
+        }
+        
+    }
+}
+
+

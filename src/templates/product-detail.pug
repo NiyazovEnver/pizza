@@ -1,0 +1,42 @@
+---
+title: Продукт
+---
+extends layouts/_layout-detail
+block content
+    main.product
+        div.product-detail
+            img(src='img/pizza-pepperoni.png' width='336px' height='333px').product-detail__img
+            div.product-detail__container
+                div.product-detail__wrapper
+                    img(src='icons/size.svg' width='30px' height='30px').product-detail__wrapper-img
+                    p.product-detail__size 30см
+                div.product-detail__wrapper   
+                    img(src='icons/weight.svg' width='20px' height='20px').product-detail__wrapper-img
+                    p.product-detail__weight 420г
+
+            h3.product-detail__title Пепперони
+            p.product-detail__ingridient пикантная пепперони, томатный соус, моцарелла
+
+            div.product-detail__flex-quantity
+                div.product-detail__quantity
+                    
+                    button.product-detail__minus-btn -
+                    span.product-detail__count 1
+                    button.product-detail__plus-btn +
+                +button('395 ₽', 'product-detail__buy')
+
+        section.add-pizza
+            +title('Добавить в пиццу')        
+            include ./partials/_add-pizza
+
+        section.order
+            +title('С этим товаром покупают')            
+            include ./partials/_order
+
+      
+        
+
+
+    
+
+        

@@ -1,0 +1,128 @@
+.page-category{
+    width: $bp-phone;
+
+    margin: 0 auto;
+    margin-bottom: 35px;
+    
+    &__note{
+        height: 15px;
+
+        margin-top: 4px;
+        margin-left: 2px;
+    }
+    @include padding-s();
+        &__cart{
+            position: relative;
+
+            display: block;
+            
+            width: 47%;
+            
+            margin-right: 16px;
+            margin-bottom: 16px;
+
+            // margin: 8px;
+
+            padding: 3px 5px 10px 5px;
+            
+            border-radius: 5px;
+
+            box-shadow: var(--b-shadow);
+
+           &:nth-child(2n){
+               margin-right: 0;
+           }
+            
+            &__label{
+                display: block;
+
+                position: absolute;
+
+                right: 20px;
+                top: 6px;
+            }
+
+            input[type="checkbox"]{
+                display: none;
+            }
+            
+            input[type="checkbox"] + .page-category__like-fill {
+                position: absolute; 
+
+                top: 7px;
+                right: 5px;
+
+                width: 14px; 
+                height: 13px;
+                
+                cursor: pointer; 
+                fill: var(--white);
+                stroke: var(--gray-400);
+            }
+        
+            input[type="checkbox"]:checked + .page-category__like-fill{
+                    fill: var(--red-500);
+               }
+            .category__names{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        &__list{
+            display: flex;
+            flex-wrap: wrap;
+
+            margin-top: 16px;
+            margin-bottom: 36px;
+        }
+}
+
+@include rmin($bp-phone-m){
+    .page-category{
+        width: $bp-phone-m;
+
+        @include padding();
+        &__cart{
+            width: 30%;
+
+
+            &:nth-child(2n){
+                margin-right: 16px;
+            }
+
+            &:nth-child(3n){
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+
+@include rmin($bp-tablet){
+    .category__note{
+        height: 15px;
+
+        margin-bottom: 7px;
+    }
+    
+    .page-category{
+        width: $bp-tablet;
+        &__cart{
+            width: 18.2%;
+            
+            padding-bottom: 15px;
+
+            &:nth-child(3n){
+                margin-right: 16px;
+            }
+
+            &:nth-child(5n){
+                margin-right: 0;
+            }
+            
+        }
+    }
+
+    
+}

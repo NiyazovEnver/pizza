@@ -1,0 +1,20 @@
+mixin shop-cart(img, ingridient, name, multiplier, cost)
+    div.shop-cart__flex-description
+        img(src='img/'+ img width='75px' height= '75px').shop-cart__img
+        div.shop-cart__wrap-description 
+            p.shop-cart__ingridient= ingridient
+                img(src="img/svgo/accord.svg").shop-cart__accord
+            p.shop-cart__name= name
+            
+            div.shop-cart__count-btn
+                button.shop-cart__minus-btn -
+                button.shop-cart__plus-btn +
+
+    button.shop-cart__delete-btn
+        +icon('delete', 'shop-cart__delete-icon')
+  
+        
+    div.shop-cart__flex-multiplier 
+        input(type='text' value=multiplier).shop-cart__multiplier
+        span.shop-cart__multiplier-icon x 
+        span.shop-cart__cost= cost

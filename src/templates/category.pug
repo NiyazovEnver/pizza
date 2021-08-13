@@ -1,0 +1,35 @@
+---
+title: Категории
+---
+extends layouts/_layout
+block content
+    main.page-category
+        +title('Категории')
+
+               
+        ul.page-category__list
+            li.page-category__cart
+                +categories('pizza.svg', 'Пицца', '1', '25 Видов', 'New')
+            li.page-category__cart
+                +categories('burger.svg', 'Бургеры','1', '16 Видов', 'Sale')
+            li.page-category__cart
+                +categories('wok.svg', 'Лапша Wok','1', '6 Видов')
+            li.page-category__cart
+                +categories('sushi-roll.svg', 'Роллы','1', '16 Видов')
+            li.page-category__cart
+                +categories('sushi.svg', 'Суши', '1', '36 Видов')
+            li.page-category__cart
+                +categories('breakfast.svg', 'Завтраки', '1', '15 Видов')
+            li.page-category__cart
+                +categories('soup.svg', 'Первые блюда', '1', '14 Видов')
+            li.page-category__cart
+                +categories('meat.svg', 'Вторые блюда', '1', '10 Видов')
+            li.page-category__cart
+                +categories('salad.svg', 'Салаты', '1', '8 Видов')
+            li.page-category__cart
+                +categories('bread.svg', 'Выпечка', '1', '6 Видов')
+            li.page-category__cart
+                +categories('soda.svg', 'Напитки', '1', '5 Видов')
+    
+        +title('Частые заказы', '#', 'Вся история')
+        include ./partials/_order

@@ -1,0 +1,245 @@
+.popular-dishes{
+    &__img{
+        width: 116px;
+        height: 115px;
+    }
+    &__cost{
+        display: block;
+        
+        width: 100%;
+        
+        font-family: $font-title;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        
+        color: var(--black);
+    }
+    &__ingridient{
+        height: 27px;
+        
+        margin-bottom: 4px;
+
+        font-family: $font-main;
+        font-size: $ingridient-pizza;
+        text-align: center;
+
+        color: var(--gray-500);
+        
+    }
+    &__title{
+        font-family: $font-main;
+        font-size: $pizza-title;
+        line-height: 24px;
+        text-align: center;
+
+        color: var(--red-500);
+    }
+    &__size{
+        margin-left: 1px;
+        
+        font-family: $font-title;
+        font-size: $small-text;
+
+        color: var(--black);
+    }
+    
+    &__size-wrap{
+        display: flex;
+        align-items: center;
+    }
+    &__button-buy{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        width: 31px;
+        height: 31px;
+        
+        margin-top: -18px;
+
+        border-radius: 50%;
+
+        box-shadow: var(--button-dishes-shadow);
+        background: var(--red-gradient);
+
+       
+    }
+    &__weight{
+        margin-left: 2px;
+
+        font-family: $font-title;
+        font-size: $small-text;
+
+        color: var(--black);
+    }
+    &__weight-wrap{
+        display: flex;
+        align-items: center;
+    }
+    &__buy{
+        display: flex;
+        justify-content: space-between;
+
+        margin-bottom: 9px;
+    }
+    
+    &__wrap-img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__wrap{
+        display: flex;
+        justify-content: flex-end;
+       
+    }
+    &__note{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 13px;
+
+        border-radius: 2px;
+        &::after{
+            content: " ";
+        }
+        
+    }
+    &__note-new{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 13px;
+
+        border-radius: 2px;
+        
+        
+
+        background: var(--red-gradient);
+        color: var(--white);
+        
+        &::after{
+            font-family: $font-title;
+            font-size: $note-size;
+            font-weight: bold;
+            content: "New";
+        }
+
+       
+    }
+    &__note-sale{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 45px;
+        height: 13px;
+
+        border-radius: 2px;
+
+        
+
+        background: var(--orange-gradient);
+        color: var(--white);
+        
+        &::after{
+            font-family: $font-title;
+            font-size: $note-size;
+            font-weight: bold;
+            content: "Sale";
+
+        }
+
+    }
+
+    &__button-icon{
+        width: 13px;
+        height: 13px;
+
+        fill: var(--white);
+    }
+    &__cart{
+        display: block;
+
+        width: 153px;
+
+        
+        margin: 5px;
+
+        padding: 14px;
+
+        border-radius: 5px;
+        
+        box-shadow: var(--b-shadow);
+    }
+    
+    &__list{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+
+        margin-right: -20px;
+
+        padding-top: 15px;
+        padding-bottom: 25px;
+        
+        li{
+            display: flex;
+        }
+        li:last-child{
+            a{
+                margin-right: 25px;
+            }
+        }
+
+        
+    }
+}
+
+@include rmin($bp-tablet){
+    
+    .popular-dishes{
+        &__title{
+            font-size: $pizza-title-l;
+        }
+        &__ingridient{
+            font-size: $ingridient-pizza-l;
+        }
+        
+        &__size{
+            margin-left: -3px;
+            
+            font-size: $small-text-l;
+            line-height: 14px;
+
+        }
+        &__cost{
+            font-size: $dishes-cost-size;
+           margin-top: 30px;
+        }
+        &__size-img{
+            width: 20px;
+            height: 20px;
+        }
+        &__weight{
+            font-size: $small-text-l;
+        }
+        &__weight-img{
+            width: 20px;
+            height: 20px;
+        }
+        
+        &__img{
+            width: 140px;
+            height: 140px;
+        }
+        
+        &__cart{
+            width: 170px;
+            margin: 5px;
+        }
+    }
+}

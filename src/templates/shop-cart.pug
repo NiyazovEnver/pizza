@@ -1,0 +1,27 @@
+---
+title: Корзина
+---
+extends layouts/_layout-detail
+block content
+    main.shop-cart
+        div.shop-cart__flex
+            h2.shop-cart__title Мой заказ
+            button.shop-cart__view-btn
+                img(src='img/svgo/shop-cart.svg')
+
+        ul.shop-cart__list
+            li.shop-cart__item
+                +shop-cart('pizza-pepperoni.png', 'Пицца / 420г / 30см', 'Пепперони', '1', '395 ₽')
+            li.shop-cart__item
+                +shop-cart('pizza-italian.png', 'Пицца / 460г / 30см', 'Итальянская', '2', '960 ₽') 
+            li.shop-cart__item
+                +shop-cart('pizza-4cheese.png', 'Пицца / 450г / 30см', 'Четыре сыра', '1', '425 ₽') 
+            li.shop-cart__item
+                +shop-cart('diablo2.png', 'Пицца / 410г / 30см', 'Диабло', '1', '455 ₽') 
+
+        div.shop-cart__bg-button
+            +button('Оформить заказ', 'shop-cart__button') 
+    
+    script window.onload = function() { document.querySelector('.header__button-basket').style.boxShadow='none'; };
+      
+    

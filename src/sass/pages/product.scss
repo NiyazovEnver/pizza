@@ -1,0 +1,22 @@
+.product{
+    @include padding-s();
+}
+@include rmin($bp-phone-m){
+    .product{
+        width: $bp-phone-m;
+        
+        margin: 0 auto;
+
+        @include padding();
+    }
+}
+@include rmin($bp-phone-l){
+    .product{
+        width: $bp-phone-l;
+    }
+}
+@include rmin($bp-tablet){
+    .product{
+        width: $bp-tablet;
+    }
+}

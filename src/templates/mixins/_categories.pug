@@ -1,0 +1,23 @@
+mixin categories(name, title, toggle='', types='', note)
+        
+
+        if toggle == 1
+            
+            div.page-category__note
+                if note==''
+                    strong.popular-dishes__note
+                if note=='New'
+                    strong.popular-dishes__note-new
+                if note=='Sale'    
+                    strong.popular-dishes__note-sale
+            label
+                input(type='checkbox')
+                +icon('like-fill', 'page-category__like-fill')
+            
+            div.category__names
+                img(src='img/svgo/'+name+'' width=42 height=42).categories__img
+                h3.categories__title=title
+                p.categories__types=types
+        else
+            img(src='img/svgo/'+name+'' width=39 height=39).categories__img
+            h3.categories__title=title

@@ -1,0 +1,7 @@
+mixin add-pizza(img, name, cost)
+    
+    img(src='img/'+img height='65px').add-pizza__img
+    h3.add-pizza__name= name
+    div.add-pizza__flex-cost
+        p.add-pizza__cost= cost
+        +button('+', 'add-pizza__button')

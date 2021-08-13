@@ -1,0 +1,25 @@
+mixin dishes(img, weight, size, name, ingridient, cost, note)
+
+    div.popular-dishes__wrap
+        if note==''
+            strong.popular-dishes__note
+        if note=='New'
+            strong.popular-dishes__note-new
+        if note=='Sale'    
+            strong.popular-dishes__note-sale
+    div.popular-dishes__wrap-img
+        img(src='img/'+img).popular-dishes__img
+    div.popular-dishes__buy
+        div.popular-dishes__weight-wrap
+            img(src='icons/weight.svg').dishes__weight-img
+            p.popular-dishes__weight= weight
+        button.popular-dishes__button-buy
+            span.visually-hidden Купить
+            +icon('header__cart', 'popular-dishes__button-icon')
+        div.popular-dishes__size-wrap
+            img(src='icons/size.svg' width='14px' height='14px').popular-dishes__size-img
+            p.popular-dishes__size= size
+    
+    h3.popular-dishes__title=name 
+    p.popular-dishes__ingridient= ingridient
+    b.popular-dishes__cost= cost 

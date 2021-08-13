@@ -1,0 +1,61 @@
+div.menu
+    div.menu__flex
+        button.menu__button--closed
+            span.visually-hidden Открыть меню
+        a(href='shop-cart.html').header__button-basket
+            strong.header__total-cost 2235 ₽
+            div.header__container
+                +icon('header__cart', 'header__icon')
+                span.header__count 3
+    p.menu__graphic
+        time Ежедневно
+    p.menu__time 
+        time C 09:00 до 21:00
+
+    nav.menu__main-nav
+        ul.menu__main-nav__list 
+            li.menu__main-nav__list-item
+                a(href='main.html')
+                    +icon('home', 'menu__icon-home')
+                    p Главная
+            li.menu__main-nav__list-item
+                a(href='#') 
+                    +icon('user', 'menu__icon-user' )
+                    p Личный кабинет
+            li.menu__main-nav__list-item 
+                a(href='#')
+                    +icon('shopping-bag', 'menu__icon-shoping-bag')
+                    p Мои заказы
+            li.menu__main-nav__list-item 
+                a(href='#')
+                    +icon('voucher', 'menu__icon-voucher')
+                    p Промокоды
+            li.menu__main-nav__list-item 
+                a(href='#')
+                    +icon('truck', 'menu__icon-truck')
+                    p Доставка
+            li.menu__main-nav__list-item 
+                a(href='#')
+                    +icon('newspaper', 'menu__icon-newspaper')
+                    p Новости
+            li.menu__main-nav__list-item 
+                a(href='#')
+                    +icon('phone-call', 'menu__icon-phone-call')
+                    p Контакты
+
+    a(href="#").menu__button-call
+        +icon('headset')
+        p Звонок оператору  
+
+    div.menu__social
+        p Мы в социальных сетях
+        ul.menu__social-icon
+            li
+                a(href="telegram.com") 
+                    +icon('telegram')
+            li
+                a(href="twitter.com") 
+                    +icon('twitter')
+            li
+                a(href="facebook.com") 
+                    +icon('facebook') 

@@ -1,0 +1,7 @@
+mixin order(img, name, volume, cost)
+    //- div.order__wrapper
+    img(src='img/'+img class=order__img width='87px' height='113px')
+    div.order__wrapper
+        h3.order__title=name 
+        p.order__volume=volume 
+        +button(cost, 'order__button')
